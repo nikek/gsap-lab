@@ -1,0 +1,68 @@
+<!doctype html>
+<html>
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <meta name="description" content="GSAP Lab">
+  <meta name="author" content="Niklas Ek">
+
+  <title>GSAP Lab</title>
+  <link rel="stylesheet" href="style.css">
+  
+</head>
+<body>
+  <div id="logo">Woop</div>
+
+  <div class="sqr-wrap">
+    <div id="sqr"></div>
+  </div>
+
+  <div>
+    <div id="demo">
+      <div class="box" id="red"></div>
+      <div class="box" id="yellow"></div>
+      <div class="box" id="green"></div>
+      <div class="box" id="blue"></div>
+      <div class="box" id="pink"></div>
+      <div class="box" id="purple"></div>
+    </div>
+  </div>
+
+  Progress
+  <div class="scrubber">
+    <input type="range" min="0" max="100" value="50" id="fader" step="1">
+    <progress value="0" max="100"></progress>
+    <span class="output"><output for="fader" id="volume"></output>%</span>
+  </div>
+
+  <div class="scrubber">
+    <input type="range" min="0" max="100" value="50" id="timespan" step="1">
+    <progress value="0" max="100"></progress>
+    <span class="output"><output for="timespan" id="volume"></output>%</span>
+  </div>
+
+  <button id="playBtn">Play</button>
+  <button id="reverseBtn">Reverse</button>
+  <button id="restartBtn">Restart</button>
+
+
+  <div class="paths">
+    <svg xmlns="http://www.w3.org/2000/svg" height="98" width="100%" viewBox="0 0 581 98" preserveAspectRatio="xMidYMid meet">
+      <path d="M62.9 14.9c-25-7.74-56.6 4.8-60.4 24.3-3.73 19.6 21.6 35 39.6 37.6 42.8 6.2 72.9-53.4 116-58.9 65-18.2 191 101 215 28.8 5-16.7-7-49.1-34-44-34 11.5-31 46.5-14 69.3 9.38 12.6 24.2 20.6 39.8 22.9 91.4 9.05 102-98.9 176-86.7 18.8 3.81 33 17.3 36.7 34.6 2.01 10.2.124 21.1-5.18 30.1" stroke="#70ffea" stroke-width="4.3" fill="none" stroke-dashoffset="988" stroke-dasharray="988"></path>
+    </svg>
+
+    <div class="main-brand">
+      <svg class="logo" viewBox="0 0 223 100" version="1.1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink">
+        <g fill="none" stroke-width="3">
+          <path d="M4.84364395,100.566406 C35.4783036,100.566412 61.0411071,61.7213692 61.0411085,34.544175 C61.0411099,61.7213692 86.6039134,100.566412 117.238573,100 L145.372695,100"></path>
+          <path d="M41.4523476,100.440715 C72.0870072,100.440724 97.6498107,46.247375 97.6498121,8.33203125 C97.6498135,46.247375 123.212617,100.440724 153.847277,100.440715 L179.608004,100.440715" transform="translate(93.608169, 67.555291)  scale(-1, 1) translate(-93.608169, -68)"></path>
+        </g>
+      </svg>
+    </div>
+  </div>
+
+  <script src="TweenMax.min.js"></script>
+  <script src="TimelineMax.min.js"></script>
+  <script src="script.js"></script>
+</body>
+</html>
